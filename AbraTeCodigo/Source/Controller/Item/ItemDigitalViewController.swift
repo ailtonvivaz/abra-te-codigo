@@ -14,6 +14,7 @@ class ItemDigitalViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var tituloLabel: UILabel!
     @IBOutlet weak var instituicaoLabel: UILabel!
+    @IBOutlet weak var tituloCardLabel: UILabel!
     @IBOutlet weak var tituloBottomLabel: UILabel!
     @IBOutlet weak var instituicaoBottomLabel: UILabel!
     @IBOutlet weak var descricaoLabel: UILabel!
@@ -25,6 +26,7 @@ class ItemDigitalViewController: UIViewController {
         
         tituloLabel.text = item.nome
         instituicaoLabel.attributedText = item.instituicao.nome.withVerified()
+        tituloCardLabel.text = item.nome
         tituloBottomLabel.text = item.nome
         instituicaoBottomLabel.attributedText = item.instituicao.nome.withVerified()
         descricaoLabel.text = item.descricao

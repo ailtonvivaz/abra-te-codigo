@@ -16,6 +16,7 @@
                 <outlet property="instituicaoBottomLabel" destination="PYn-e5-FDM" id="Mg2-Jg-V4K"/>
                 <outlet property="instituicaoLabel" destination="dc3-c0-y8l" id="mej-nu-V5X"/>
                 <outlet property="tituloBottomLabel" destination="s7t-Vx-2Dy" id="lGD-j8-wUe"/>
+                <outlet property="tituloCardLabel" destination="unZ-Tf-bL8" id="AGm-La-BXP"/>
                 <outlet property="tituloLabel" destination="v2Q-gG-afF" id="KDH-D3-ZD0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
