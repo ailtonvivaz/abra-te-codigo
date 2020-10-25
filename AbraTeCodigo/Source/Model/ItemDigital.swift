@@ -21,6 +21,12 @@ enum Denominacao: String {
 }
 
 class ItemDigital {
+    struct Dado: Identifiable {
+        var id: String { titulo }
+        var titulo: String
+        var valor: String
+    }
+    
     var fileName: String
     var denominacao: Denominacao
     var nome: String
@@ -30,6 +36,8 @@ class ItemDigital {
     
     var licenca: Licenca
     var instituicao: Instituicao
+    
+    var dados: [Dado] { [] }
     
     internal init(fileName: String, denominacao: Denominacao, nome: String, descricao: String, local: String, data: String, licenca: Licenca, instituicao: Instituicao) {
         self.fileName = fileName

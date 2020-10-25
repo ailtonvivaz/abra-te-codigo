@@ -19,7 +19,7 @@ class Acervo {
     
     lazy var instituicoes: [Instituicao] = [mhn, eav, casaPovo, bienal, macUSP, museuFutebol]
     
-    private lazy var itens: [ItemDigital] = [
+    lazy var itens: [ItemDigital] = [
         // MARK: - Moedas
         Moeda(fileName: "136997", nome: "Moeda de 4.000 réis", descricao: "Anverso: Ao centro, as armas do Reino, cortando a legenda; à esquerda o número 4000 entre pontos, e à direita três florões entre pontos. Legenda: PETRUS . II . DG . PORTVG . REX  . Reverso: Ao centro, a cruz de São Jorge, vazada circundada por quatro arcos unidos por florões. Legenda: ET . BRASILLIAE . DOMINVS . ANNO . 1699 .", local: "Rio de Janeiro", data: "1699", tecnica: "Cunhagem", material: "Ouro", governante: "D. Pedro II (1683-1706)", diametro: 13.91, licenca: .cc, instituicao: mhn),
         Moeda(fileName: "137140", nome: "Moeda de 4.000 réis", descricao: "Anverso: Ao centro, escudo das armas portuguesas sob coroa cortando a legenda; à esquerda entre pontos valor 4000 réis e a direita entre pontos três florões. Legenda: ao redor, JOANNES . D . G . PORT . E . ALG . P . REGENS . Reverso: Ao centro, a cruz de São Jorge, vazada e circundada por quatro arcos unidos por florões dentro de anel de aspas. Legenda entre florões: ao redor, ET . BRASILIÆ . DOMINUS . ANNO . 1808 .", local: "Rio de Janeiro", data: "1808", tecnica: "Cunhagem", material: "Ouro", governante: "D. João Príncipe Regente (1799-1816) ", diametro: 27.30, licenca: .cc, instituicao: mhn),
