@@ -38,11 +38,11 @@ class ARPreviewViewController: QLPreviewController {
             modalTopBottomConstraint,
             modalView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             modalView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-//            modalView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
         ])
         
         modalView.isUserInteractionEnabled = true
         modalView.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(panModal)))
+        modalView.configure(item: itemDigital)
     }
     
     @objc
@@ -59,7 +59,6 @@ class ARPreviewViewController: QLPreviewController {
                 if yTranslation > 0 || yTranslation < -modalView.frame.height + modalMinHeight { break }
                 modalTopBottomConstraint.constant = -modalMinHeight + yTranslation
             }
-            print(largeModal, yTranslation)
         case .ended:
             let yTranslation = sender.translation(in: view).y
             if largeModal {
@@ -67,7 +66,6 @@ class ARPreviewViewController: QLPreviewController {
             } else {
                 largeModal = yTranslation < -50
             }
-            print(largeModal, modalTopBottomConstraint.constant, modalBottomConstraint.constant)
             if largeModal {
                 modalTopBottomConstraint.isActive = false
                 modalBottomConstraint.isActive = true

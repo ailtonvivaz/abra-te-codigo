@@ -6,10 +6,14 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ARModalView: UIView {
 
     @IBOutlet var contentView: UIView!
+    @IBOutlet weak var dadosView: UIView!
+    @IBOutlet weak var nomeLabel: UILabel!
+    @IBOutlet weak var instituicaoLabel: UILabel!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -26,6 +30,22 @@ class ARModalView: UIView {
         addSubview(contentView)
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+    }
+    
+    func configure(item: ItemDigital) {
+        nomeLabel.text = item.nome
+        instituicaoLabel.text = item.instituicao.nome
+        
+        let itemDadosView = UIHostingController(rootView: ItemDataView(item: item, colorScheme: .light))
+        dadosView.addSubview(itemDadosView.view)
+        
+        itemDadosView.view.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            itemDadosView.view.topAnchor.constraint(equalTo: dadosView.topAnchor),
+            itemDadosView.view.leadingAnchor.constraint(equalTo: dadosView.leadingAnchor),
+            itemDadosView.view.trailingAnchor.constraint(equalTo: dadosView.trailingAnchor),
+            itemDadosView.view.bottomAnchor.constraint(equalTo: dadosView.bottomAnchor),
+        ])
     }
 
 }
