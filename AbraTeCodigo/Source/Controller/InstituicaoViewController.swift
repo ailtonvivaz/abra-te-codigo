@@ -149,6 +149,16 @@ extension InstituicaoViewController: UICollectionViewDelegate, UICollectionViewD
         return section == 0 ? itens.count : exposicoes.count
     }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+            let item = itens[indexPath.row]
+            let vc = ItemDigitalViewController.loadFromNib()
+            vc.item = item
+            present(vc, animated: true)
+        }
+    }
+
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         if indexPath.section == 0 {
