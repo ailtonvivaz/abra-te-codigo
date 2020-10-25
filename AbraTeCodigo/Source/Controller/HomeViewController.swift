@@ -45,6 +45,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var collectionView: UICollectionView!
 
+    var exposicoes: [Exposicao] = []
     var instituicoes: [Instituicao] = []
     var categorias : [Categoria] = []
     
@@ -86,6 +87,7 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         navigationController?.navigationBar.barTintColor = UIColor(named: "tintColor")
 
+        exposicoes = Acervo.shared.exposicoes
         instituicoes = Acervo.shared.instituicoes
         categorias = Acervo.shared.categorias
 
@@ -115,7 +117,7 @@ class HomeViewController: UIViewController {
                 item.contentInsets.trailing = 20
                 item.contentInsets.bottom = 20
 
-                let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(0.7), heightDimension: .fractionalHeight(0.32)), subitems: [item])
+                let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(0.7), heightDimension: .fractionalWidth(0.3)), subitems: [item])
                 group.contentInsets.leading = 0
                 group.contentInsets.top = 0
                 group.contentInsets.trailing = 0
@@ -139,7 +141,6 @@ class HomeViewController: UIViewController {
                 group.contentInsets.trailing = 0
 
                 section = NSCollectionLayoutSection(group: group)
-//                section.orthogonalScrollingBehavior = .gro
                 section.contentInsets.leading = 24
                 section.contentInsets.trailing = 0
             } else {
@@ -184,7 +185,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return section == 0 ? 3 : section == 1 ? instituicoes.count : categorias.count
+        return section == 0 ? exposicoes.count : section == 1 ? instituicoes.count : categorias.count
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -202,8 +203,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         if indexPath.section == 0 {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(ExposicaoViewCell.self)", for: indexPath)
-            cell.backgroundColor = .red
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(ExposicaoViewCell.self)", for: indexPath) as! ExposicaoViewCell
+            cell.configure(exposicao: exposicoes[indexPath.row])
             return cell
         } else if indexPath.section == 1 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(InstituicaoViewCell.self)", for: indexPath) as! InstituicaoViewCell

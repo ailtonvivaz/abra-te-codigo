@@ -23,8 +23,8 @@
                             <constraint firstAttribute="width" secondItem="xqW-OA-FHm" secondAttribute="height" id="90A-TO-Zbz"/>
                         </constraints>
                     </imageView>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cid-XN-4cw">
-                        <rect key="frame" x="185" y="82.5" width="244" height="34.5"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cid-XN-4cw">
+                        <rect key="frame" x="185" y="72.5" width="244" height="54.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPR-mU-tsG">
                                 <rect key="frame" x="0.0" y="0.0" width="244" height="20.5"/>
@@ -33,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5R0-8O-BqM">
-                                <rect key="frame" x="0.0" y="20.5" width="244" height="14"/>
+                                <rect key="frame" x="0.0" y="40.5" width="244" height="14"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="archivebox" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NSQ-KB-qOy">
                                         <rect key="frame" x="0.0" y="1" width="14" height="11.5"/>
