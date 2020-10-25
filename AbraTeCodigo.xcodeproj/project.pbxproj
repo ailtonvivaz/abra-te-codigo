@@ -39,6 +39,7 @@
 		5EA912252545EF6C00AB366D /* ItemDigitalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA912232545EF6C00AB366D /* ItemDigitalViewController.xib */; };
 		5EA9122D2545FA7D00AB366D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA9122C2545FA7D00AB366D /* UIView+Extension.swift */; };
 		5EA912352546045500AB366D /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA912342546045500AB366D /* NSAttributedString+Extension.swift */; };
+		5EA9124825462D4F00AB366D /* 6368.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5E79991B254517ED00530CAE /* 6368.usdz */; };
 		63F52B712546077700EC6308 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F52B652546077600EC6308 /* HomeViewController.swift */; };
 		63F52B722546077700EC6308 /* ExposicaoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F52B672546077600EC6308 /* ExposicaoViewCell.swift */; };
 		63F52B732546077700EC6308 /* CategoriaViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F52B682546077600EC6308 /* CategoriaViewCell.xib */; };
@@ -443,6 +444,7 @@
 				5E79983325445E0200530CAE /* Assets.xcassets in Resources */,
 				5E7998E025450C7600530CAE /* 137214.usdz in Resources */,
 				5E7998E125450C7600530CAE /* 137253.usdz in Resources */,
+				5EA9124825462D4F00AB366D /* 6368.usdz in Resources */,
 				5E79983125445E0100530CAE /* Main.storyboard in Resources */,
 				5EA912152545BCFE00AB366D /* ARModalView.xib in Resources */,
 				5E7998E325450C7600530CAE /* 137140.usdz in Resources */,
@@ -487,7 +489,6 @@
 				5EA9121A2545CE9F00AB366D /* ItemDataView.swift in Sources */,
 				5EA912242545EF6C00AB366D /* ItemDigitalViewController.swift in Sources */,
 				5EA9122D2545FA7D00AB366D /* UIView+Extension.swift in Sources */,
-				5E79982E25445E0100530CAE /* ViewController.swift in Sources */,
 				5EA912352546045500AB366D /* NSAttributedString+Extension.swift in Sources */,
 				5E7998FF2545155400530CAE /* Moeda.swift in Sources */,
 				5E7999282545190E00530CAE /* Acervo.swift in Sources */,

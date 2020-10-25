@@ -19,6 +19,7 @@ class Moeda: ItemDigital {
             Dado(titulo: "Técnina", valor: tecnica),
             Dado(titulo: "Data de Produção", valor: data),
             Dado(titulo: "Local de Produção", valor: local),
+            Dado(titulo: "Diâmetro", valor: String(format: "%.1fmm", diametro)),
             Dado(titulo: "Materiais", valor: material),
             Dado(titulo: "Governante", valor: governante),
         ]

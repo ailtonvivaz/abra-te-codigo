@@ -28,6 +28,7 @@ class ItemDigitalViewController: UIViewController {
         tituloBottomLabel.text = item.nome
         instituicaoBottomLabel.attributedText = item.instituicao.nome.withVerified()
         descricaoLabel.text = item.descricao
+        imageView.image = UIImage(named: item.imagem!)
     }
     
     @IBAction func onClickSeeAR(_ sender: Any) {
