@@ -29,6 +29,6 @@ class Moeda: ItemDigital {
         self.material = material
         self.governante = governante
         self.diametro = diametro
-        super.init(fileName: fileName, denominacao: .moeda, nome: nome, descricao: descricao, local: local, data: data, licenca: licenca, instituicao: instituicao)
+        super.init(fileName: fileName, denominacao: .moeda, nome: nome, descricao: descricao, local: local, data: data, licenca: licenca, instituicao: instituicao, imagem: imagem)
     }
 }

@@ -33,6 +33,7 @@ class ItemDigital {
     var descricao: String
     var local: String
     var data: String
+    var imagem: String?
     
     var licenca: Licenca
     var instituicao: Instituicao
@@ -48,5 +49,6 @@ class ItemDigital {
         self.data = data
         self.licenca = licenca
         self.instituicao = instituicao
+        self.imagem = imagem
     }
 }

@@ -12,3 +12,7 @@ extension UIViewController {
         Self.init(nibName: String(describing: Self.self), bundle: nil)
     }
 }
+
+extension CGFloat {
+    static var cornerRadius: CGFloat = 8
+}

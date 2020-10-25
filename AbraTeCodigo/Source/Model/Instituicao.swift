@@ -14,6 +14,7 @@ struct Instituicao: Equatable {
     let logo: String
     let fotoCapa: String
     let categoria: Categoria
+    var resumo: String = ""
     
     static func == (lhs: Instituicao, rhs: Instituicao) -> Bool {
         lhs.nome == rhs.nome
