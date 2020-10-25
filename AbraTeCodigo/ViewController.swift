@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            let vc = ARPreviewViewController()
+            let vc = ARPreviewViewController.loadFromNib()
             self.present(vc, animated: true, completion: nil)
         }
     }

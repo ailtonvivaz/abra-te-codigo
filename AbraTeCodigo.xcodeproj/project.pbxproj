@@ -25,6 +25,10 @@
 		5E79987D25447AEB00530CAE /* wateringcan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5E79987425447AEA00530CAE /* wateringcan.usdz */; };
 		5E79987E25447AEB00530CAE /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5E79987525447AEA00530CAE /* chair_swan.usdz */; };
 		5E79987F25447AEB00530CAE /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5E79987625447AEB00530CAE /* cup_saucer_set.usdz */; };
+		5E7998972544B95600530CAE /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7998952544B95600530CAE /* ARViewController.swift */; };
+		5E7998982544B95600530CAE /* ARViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E7998962544B95600530CAE /* ARViewController.xib */; };
+		5E79989E2544BB0200530CAE /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79989D2544BB0200530CAE /* UIViewController+Extension.swift */; };
+		5E7998CD2544EB5200530CAE /* coin-7.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5E7998CC2544EB5200530CAE /* coin-7.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		5E79987425447AEA00530CAE /* wateringcan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = wateringcan.usdz; sourceTree = "<group>"; };
 		5E79987525447AEA00530CAE /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
 		5E79987625447AEB00530CAE /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cup_saucer_set.usdz; sourceTree = "<group>"; };
+		5E7998952544B95600530CAE /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		5E7998962544B95600530CAE /* ARViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARViewController.xib; sourceTree = "<group>"; };
+		5E79989D2544BB0200530CAE /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		5E7998CC2544EB5200530CAE /* coin-7.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "coin-7.usdz"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,8 @@
 		5E79982825445E0100530CAE /* AbraTeCodigo */ = {
 			isa = PBXGroup;
 			children = (
+				5E79989C2544BAF500530CAE /* Extension */,
+				5E7998892544B90000530CAE /* AR */,
 				5E79985C2544641D00530CAE /* Resources */,
 				5E79982925445E0100530CAE /* AppDelegate.swift */,
 				5E79982B25445E0100530CAE /* SceneDelegate.swift */,
@@ -127,7 +137,6 @@
 				5E79983225445E0200530CAE /* Assets.xcassets */,
 				5E79983425445E0200530CAE /* LaunchScreen.storyboard */,
 				5E79983725445E0200530CAE /* Info.plist */,
-				5E7998682544729200530CAE /* ARPreviewViewController.swift */,
 			);
 			path = AbraTeCodigo;
 			sourceTree = "<group>";
@@ -170,6 +179,7 @@
 		5E79986D25447ADD00530CAE /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				5E7998CC2544EB5200530CAE /* coin-7.usdz */,
 				5E79987525447AEA00530CAE /* chair_swan.usdz */,
 				5E79987625447AEB00530CAE /* cup_saucer_set.usdz */,
 				5E79987325447AEA00530CAE /* fender_stratocaster.usdz */,
@@ -180,6 +190,24 @@
 				5E79987125447AE800530CAE /* wheelbarrow.usdz */,
 			);
 			path = Samples;
+			sourceTree = "<group>";
+		};
+		5E7998892544B90000530CAE /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				5E7998682544729200530CAE /* ARPreviewViewController.swift */,
+				5E7998952544B95600530CAE /* ARViewController.swift */,
+				5E7998962544B95600530CAE /* ARViewController.xib */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		5E79989C2544BAF500530CAE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5E79989D2544BB0200530CAE /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +315,7 @@
 			files = (
 				5E79987F25447AEB00530CAE /* cup_saucer_set.usdz in Resources */,
 				5E79987B25447AEB00530CAE /* tv_retro.usdz in Resources */,
+				5E7998982544B95600530CAE /* ARViewController.xib in Resources */,
 				5E7998642544643B00530CAE /* coin.usdz in Resources */,
 				5E79983625445E0200530CAE /* LaunchScreen.storyboard in Resources */,
 				5E79983325445E0200530CAE /* Assets.xcassets in Resources */,
@@ -296,6 +325,7 @@
 				5E79987C25447AEB00530CAE /* fender_stratocaster.usdz in Resources */,
 				5E79987725447AEB00530CAE /* teapot.usdz in Resources */,
 				5E79987A25447AEB00530CAE /* wheelbarrow.usdz in Resources */,
+				5E7998CD2544EB5200530CAE /* coin-7.usdz in Resources */,
 				5E79987825447AEB00530CAE /* pot_plant.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,10 +351,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E79989E2544BB0200530CAE /* UIViewController+Extension.swift in Sources */,
 				5E7998692544729200530CAE /* ARPreviewViewController.swift in Sources */,
 				5E79982E25445E0100530CAE /* ViewController.swift in Sources */,
 				5E79982A25445E0100530CAE /* AppDelegate.swift in Sources */,
 				5E79982C25445E0100530CAE /* SceneDelegate.swift in Sources */,
+				5E7998972544B95600530CAE /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

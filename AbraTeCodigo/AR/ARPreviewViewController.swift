@@ -13,7 +13,9 @@ class ARPreviewViewController: QLPreviewController {
     
     let dataContainer = UIView()
     
-    let objects: [String] = ["cup_saucer_set",
+    let objects: [String] = [
+                            "coin-7",
+                            "cup_saucer_set",
                              "chair_swan",
                              "fender_stratocaster",
                              "teapot",
