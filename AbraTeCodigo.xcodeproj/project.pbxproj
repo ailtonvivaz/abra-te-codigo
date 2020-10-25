@@ -28,7 +28,7 @@
 		5E7998E325450C7600530CAE /* 137140.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5E7998DD25450C7600530CAE /* 137140.usdz */; };
 		5E7998F72545153600530CAE /* ItemDigital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7998F62545153600530CAE /* ItemDigital.swift */; };
 		5E7998FF2545155400530CAE /* Moeda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7998FE2545155400530CAE /* Moeda.swift */; };
-		5E799920254518FA00530CAE /* Quadro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79991F254518FA00530CAE /* Quadro.swift */; };
+		5E799920254518FA00530CAE /* Fotografia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79991F254518FA00530CAE /* Fotografia.swift */; };
 		5E7999282545190E00530CAE /* Acervo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7999272545190E00530CAE /* Acervo.swift */; };
 		5E79993025451A1300530CAE /* Instituicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79992F25451A1300530CAE /* Instituicao.swift */; };
 		5E79993525451AD100530CAE /* Exposicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79993425451AD100530CAE /* Exposicao.swift */; };
@@ -81,7 +81,7 @@
 		5E7998F62545153600530CAE /* ItemDigital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDigital.swift; sourceTree = "<group>"; };
 		5E7998FE2545155400530CAE /* Moeda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moeda.swift; sourceTree = "<group>"; };
 		5E79991B254517ED00530CAE /* 6368.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 6368.usdz; sourceTree = "<group>"; };
-		5E79991F254518FA00530CAE /* Quadro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quadro.swift; sourceTree = "<group>"; };
+		5E79991F254518FA00530CAE /* Fotografia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fotografia.swift; sourceTree = "<group>"; };
 		5E7999272545190E00530CAE /* Acervo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acervo.swift; sourceTree = "<group>"; };
 		5E79992F25451A1300530CAE /* Instituicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instituicao.swift; sourceTree = "<group>"; };
 		5E79993425451AD100530CAE /* Exposicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exposicao.swift; sourceTree = "<group>"; };
@@ -231,7 +231,7 @@
 				5E7999272545190E00530CAE /* Acervo.swift */,
 				5E7998F62545153600530CAE /* ItemDigital.swift */,
 				5E7998FE2545155400530CAE /* Moeda.swift */,
-				5E79991F254518FA00530CAE /* Quadro.swift */,
+				5E79991F254518FA00530CAE /* Fotografia.swift */,
 				5E79992F25451A1300530CAE /* Instituicao.swift */,
 				5E79993425451AD100530CAE /* Exposicao.swift */,
 				5E7999402545272000530CAE /* Categoria.swift */,
@@ -403,7 +403,7 @@
 				5E7998FF2545155400530CAE /* Moeda.swift in Sources */,
 				5E7999282545190E00530CAE /* Acervo.swift in Sources */,
 				5E79982A25445E0100530CAE /* AppDelegate.swift in Sources */,
-				5E799920254518FA00530CAE /* Quadro.swift in Sources */,
+				5E799920254518FA00530CAE /* Fotografia.swift in Sources */,
 				5E79993525451AD100530CAE /* Exposicao.swift in Sources */,
 				5E79982C25445E0100530CAE /* SceneDelegate.swift in Sources */,
 				5E7998972544B95600530CAE /* ARViewController.swift in Sources */,

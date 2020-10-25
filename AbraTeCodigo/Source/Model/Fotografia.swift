@@ -1,5 +1,5 @@
 //
-//  Quadro.swift
+//  Fotografia.swift
 //  AbraTeCodigo
 //
 //  Created by Ailton Vieira Pinto Filho on 24/10/20.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Quadro: ItemDigital {
+class Fotografia: ItemDigital {
     struct Tamanho {
         var largura: Float
         var altura: Float
@@ -17,7 +17,7 @@ class Quadro: ItemDigital {
     let tecnica: String
     let tamanho: Tamanho
     
-    internal init(fileName: String, denominacao: Denominacao, nome: String, descricao: String, local: String, data: String, autor: String, tecnica: String, tamanho: Quadro.Tamanho, licenca: Licenca, instituicao: Instituicao) {
+    internal init(fileName: String, denominacao: Denominacao, nome: String, descricao: String, local: String, data: String, autor: String, tecnica: String, tamanho: Fotografia.Tamanho, licenca: Licenca, instituicao: Instituicao) {
         self.autor = autor
         self.tecnica = tecnica
         self.tamanho = tamanho
