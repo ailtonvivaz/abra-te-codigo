@@ -13,11 +13,11 @@ class Moeda: ItemDigital {
     let governante: String
     let diametro: Float
     
-    internal init(fileName: String, nome: String, descricao: String, local: String, data: String, tecnica: String, material: String, governante: String, diametro: Float, licenca: Licenca, instituicao: Instituicao) {
+    internal init(fileName: String, nome: String, descricao: String, local: String, data: String, tecnica: String, material: String, governante: String, diametro: Float, licenca: Licenca, instituicao: Instituicao, imagem: String? = nil) {
         self.tecnica = tecnica
         self.material = material
         self.governante = governante
         self.diametro = diametro
-        super.init(fileName: fileName, denominacao: .moeda, nome: nome, descricao: descricao, local: local, data: data, licenca: licenca, instituicao: instituicao)
+        super.init(fileName: fileName, denominacao: .moeda, nome: nome, descricao: descricao, local: local, data: data, licenca: licenca, instituicao: instituicao, imagem: imagem)
     }
 }

@@ -41,6 +41,8 @@
 		63F52B442545BFAE00EC6308 /* CategoriaViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F52B422545BFAE00EC6308 /* CategoriaViewCell.xib */; };
 		63F52B4A2545D31200EC6308 /* InstituicaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F52B482545D31200EC6308 /* InstituicaoViewController.swift */; };
 		63F52B4B2545D31200EC6308 /* InstituicaoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F52B492545D31200EC6308 /* InstituicaoViewController.xib */; };
+		63F52B542545F82300EC6308 /* ItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F52B522545F82300EC6308 /* ItemViewCell.swift */; };
+		63F52B552545F82300EC6308 /* ItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F52B532545F82300EC6308 /* ItemViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		63F52B422545BFAE00EC6308 /* CategoriaViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaViewCell.xib; sourceTree = "<group>"; };
 		63F52B482545D31200EC6308 /* InstituicaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstituicaoViewController.swift; sourceTree = "<group>"; };
 		63F52B492545D31200EC6308 /* InstituicaoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstituicaoViewController.xib; sourceTree = "<group>"; };
+		63F52B522545F82300EC6308 /* ItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewCell.swift; sourceTree = "<group>"; };
+		63F52B532545F82300EC6308 /* ItemViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +288,8 @@
 				63F52B322545BA8100EC6308 /* InstituicaoViewCell.xib */,
 				63F52B412545BFAE00EC6308 /* CategoriaViewCell.swift */,
 				63F52B422545BFAE00EC6308 /* CategoriaViewCell.xib */,
+				63F52B522545F82300EC6308 /* ItemViewCell.swift */,
+				63F52B532545F82300EC6308 /* ItemViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -402,6 +408,7 @@
 				5E7998E325450C7600530CAE /* 137140.usdz in Resources */,
 				63F52B2D2545ADE300EC6308 /* ExposicaoViewCell.xib in Resources */,
 				63F52B342545BA8100EC6308 /* InstituicaoViewCell.xib in Resources */,
+				63F52B552545F82300EC6308 /* ItemViewCell.xib in Resources */,
 				63F52B4B2545D31200EC6308 /* InstituicaoViewController.xib in Resources */,
 				5E7998CD2544EB5200530CAE /* 136997.usdz in Resources */,
 				5E7998E225450C7600530CAE /* 137272.usdz in Resources */,
@@ -439,6 +446,7 @@
 				5E7998FF2545155400530CAE /* Moeda.swift in Sources */,
 				63F52B332545BA8100EC6308 /* InstituicaoViewCell.swift in Sources */,
 				5E7999282545190E00530CAE /* Acervo.swift in Sources */,
+				63F52B542545F82300EC6308 /* ItemViewCell.swift in Sources */,
 				5E79982A25445E0100530CAE /* AppDelegate.swift in Sources */,
 				63F52B2C2545ADE300EC6308 /* ExposicaoViewCell.swift in Sources */,
 				5E799920254518FA00530CAE /* Fotografia.swift in Sources */,

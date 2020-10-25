@@ -27,11 +27,12 @@ class ItemDigital {
     var descricao: String
     var local: String
     var data: String
+    var imagem: String?
     
     var licenca: Licenca
     var instituicao: Instituicao
     
-    internal init(fileName: String, denominacao: Denominacao, nome: String, descricao: String, local: String, data: String, licenca: Licenca, instituicao: Instituicao) {
+    internal init(fileName: String, denominacao: Denominacao, nome: String, descricao: String, local: String, data: String, licenca: Licenca, instituicao: Instituicao, imagem: String? = nil) {
         self.fileName = fileName
         self.denominacao = denominacao
         self.nome = nome
@@ -40,5 +41,6 @@ class ItemDigital {
         self.data = data
         self.licenca = licenca
         self.instituicao = instituicao
+        self.imagem = imagem
     }
 }

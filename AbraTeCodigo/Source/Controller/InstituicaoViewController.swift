@@ -22,8 +22,14 @@ class InstituicaoViewController: UIViewController {
 
     var gradientLayer: CAGradientLayer!
 
+    var exposicoes: [Exposicao] = []
+    var itens : [ItemDigital] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        exposicoes = Acervo.shared.getExposicoesBy(instituicao: instituicao)
+        itens = Acervo.shared.getItensBy(instituicao: instituicao)
         
         configure()
 
@@ -45,6 +51,7 @@ class InstituicaoViewController: UIViewController {
 
     fileprivate func setupCollection() {
         collectionView.register(UINib(nibName: "\(ExposicaoViewCell.self)", bundle: nil), forCellWithReuseIdentifier: "\(ExposicaoViewCell.self)")
+        collectionView.register(UINib(nibName: "\(ItemViewCell.self)", bundle: nil), forCellWithReuseIdentifier: "\(ItemViewCell.self)")
 
         collectionView.register(CategoryHeader.self, forSupplementaryViewOfKind: categoryHeader, withReuseIdentifier: "\(CategoryHeader.self)")
 
@@ -62,7 +69,7 @@ class InstituicaoViewController: UIViewController {
                 item.contentInsets.trailing = 20
                 item.contentInsets.bottom = 20
 
-                let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(0.4), heightDimension: .fractionalHeight(0.4)), subitems: [item])
+                let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(0.42), heightDimension: .fractionalWidth(0.42)), subitems: [item])
                 group.contentInsets.leading = 0
                 group.contentInsets.top = 0
                 group.contentInsets.trailing = 0
@@ -139,13 +146,20 @@ class InstituicaoViewController: UIViewController {
 
 extension InstituicaoViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return section == 0 ? itens.count : exposicoes.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(ExposicaoViewCell.self)", for: indexPath)
-        cell.backgroundColor = .red
-        return cell
+
+        if indexPath.section == 0 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(ItemViewCell.self)", for: indexPath) as! ItemViewCell
+            cell.configure(item: itens[indexPath.row])
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(ExposicaoViewCell.self)", for: indexPath) as! ExposicaoViewCell
+            cell.configure(exposicao: exposicoes[indexPath.row])
+            return cell
+        }
     }
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
