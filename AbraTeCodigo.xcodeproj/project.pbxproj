@@ -36,6 +36,9 @@
 		5EA9120D2545BCF200AB366D /* ARModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA9120C2545BCF200AB366D /* ARModalView.swift */; };
 		5EA912152545BCFE00AB366D /* ARModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA912142545BCFE00AB366D /* ARModalView.xib */; };
 		5EA9121A2545CE9F00AB366D /* ItemDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA912192545CE9F00AB366D /* ItemDataView.swift */; };
+		5EA912242545EF6C00AB366D /* ItemDigitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA912222545EF6C00AB366D /* ItemDigitalViewController.swift */; };
+		5EA912252545EF6C00AB366D /* ItemDigitalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA912232545EF6C00AB366D /* ItemDigitalViewController.xib */; };
+		5EA9122D2545FA7D00AB366D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA9122C2545FA7D00AB366D /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,9 @@
 		5EA9120C2545BCF200AB366D /* ARModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModalView.swift; sourceTree = "<group>"; };
 		5EA912142545BCFE00AB366D /* ARModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARModalView.xib; sourceTree = "<group>"; };
 		5EA912192545CE9F00AB366D /* ItemDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDataView.swift; sourceTree = "<group>"; };
+		5EA912222545EF6C00AB366D /* ItemDigitalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDigitalViewController.swift; sourceTree = "<group>"; };
+		5EA912232545EF6C00AB366D /* ItemDigitalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDigitalViewController.xib; sourceTree = "<group>"; };
+		5EA9122C2545FA7D00AB366D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				5E79989D2544BB0200530CAE /* UIViewController+Extension.swift */,
+				5EA9122C2545FA7D00AB366D /* UIView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -259,6 +266,7 @@
 			children = (
 				5E79982D25445E0100530CAE /* ViewController.swift */,
 				5E7998892544B90000530CAE /* AR */,
+				5EA912212545EF5100AB366D /* Item */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -271,6 +279,15 @@
 				5EA912192545CE9F00AB366D /* ItemDataView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5EA912212545EF5100AB366D /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				5EA912222545EF6C00AB366D /* ItemDigitalViewController.swift */,
+				5EA912232545EF6C00AB366D /* ItemDigitalViewController.xib */,
+			);
+			path = Item;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +396,7 @@
 				5E7998982544B95600530CAE /* ARViewController.xib in Resources */,
 				5E7998642544643B00530CAE /* coin.usdz in Resources */,
 				5E79983625445E0200530CAE /* LaunchScreen.storyboard in Resources */,
+				5EA912252545EF6C00AB366D /* ItemDigitalViewController.xib in Resources */,
 				5E79983325445E0200530CAE /* Assets.xcassets in Resources */,
 				5E7998E025450C7600530CAE /* 137214.usdz in Resources */,
 				5E7998E125450C7600530CAE /* 137253.usdz in Resources */,
@@ -418,6 +436,8 @@
 				5E7998692544729200530CAE /* ARPreviewViewController.swift in Sources */,
 				5E7999412545272000530CAE /* Categoria.swift in Sources */,
 				5EA9121A2545CE9F00AB366D /* ItemDataView.swift in Sources */,
+				5EA912242545EF6C00AB366D /* ItemDigitalViewController.swift in Sources */,
+				5EA9122D2545FA7D00AB366D /* UIView+Extension.swift in Sources */,
 				5E79982E25445E0100530CAE /* ViewController.swift in Sources */,
 				5E7998FF2545155400530CAE /* Moeda.swift in Sources */,
 				5E7999282545190E00530CAE /* Acervo.swift in Sources */,

@@ -36,7 +36,7 @@ struct ItemDataView: View {
             ForEach(item.dados) { dado in
                 ItemDadoCell(dado: dado, colorScheme: colorScheme)
             }
-        }
+        }.background(Color.clear)
     }
 }
 

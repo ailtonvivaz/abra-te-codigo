@@ -36,16 +36,18 @@ class ARModalView: UIView {
         nomeLabel.text = item.nome
         instituicaoLabel.text = item.instituicao.nome
         
-        let itemDadosView = UIHostingController(rootView: ItemDataView(item: item, colorScheme: .light))
-        dadosView.addSubview(itemDadosView.view)
+        dadosView.setupSwiftUI(ItemDataView(item: item, colorScheme: .light))
         
-        itemDadosView.view.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            itemDadosView.view.topAnchor.constraint(equalTo: dadosView.topAnchor),
-            itemDadosView.view.leadingAnchor.constraint(equalTo: dadosView.leadingAnchor),
-            itemDadosView.view.trailingAnchor.constraint(equalTo: dadosView.trailingAnchor),
-            itemDadosView.view.bottomAnchor.constraint(equalTo: dadosView.bottomAnchor),
-        ])
+//        let itemDadosView = UIHostingController(rootView: ItemDataView(item: item, colorScheme: .light))
+//        dadosView.addSubview(itemDadosView.view)
+//
+//        itemDadosView.view.translatesAutoresizingMaskIntoConstraints = false
+//        NSLayoutConstraint.activate([
+//            itemDadosView.view.topAnchor.constraint(equalTo: dadosView.topAnchor),
+//            itemDadosView.view.leadingAnchor.constraint(equalTo: dadosView.leadingAnchor),
+//            itemDadosView.view.trailingAnchor.constraint(equalTo: dadosView.trailingAnchor),
+//            itemDadosView.view.bottomAnchor.constraint(equalTo: dadosView.bottomAnchor),
+//        ])
     }
 
 }

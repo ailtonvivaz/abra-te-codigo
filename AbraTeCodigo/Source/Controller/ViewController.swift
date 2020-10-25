@@ -13,8 +13,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            let vc = ARPreviewViewController.loadFromNib()
-            vc.itemDigital = Acervo.shared.getItensBy(instituicao: Acervo.shared.mhn)[0]
+            let vc = ItemDigitalViewController.loadFromNib()
+            vc.item = Acervo.shared.getItensBy(instituicao: Acervo.shared.mhn)[0]
             self.present(vc, animated: true, completion: nil)
         }
     }

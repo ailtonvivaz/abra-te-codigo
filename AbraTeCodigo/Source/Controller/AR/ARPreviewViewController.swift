@@ -20,7 +20,7 @@ class ARPreviewViewController: QLPreviewController {
     lazy var modalBottomConstraint = modalView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
     
     var largeModal = false
-    let modalMinHeight: CGFloat = 130
+    let modalMinHeight: CGFloat = 150
     
     override func viewDidLoad() {
         super.viewDidLoad()
