@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             let vc = ARPreviewViewController.loadFromNib()
+            vc.itemDigital = Acervo.shared.getItensBy(instituicao: Acervo.shared.mhn)[0]
             self.present(vc, animated: true, completion: nil)
         }
     }

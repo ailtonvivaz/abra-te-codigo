@@ -33,6 +33,8 @@
 		5E79993025451A1300530CAE /* Instituicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79992F25451A1300530CAE /* Instituicao.swift */; };
 		5E79993525451AD100530CAE /* Exposicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79993425451AD100530CAE /* Exposicao.swift */; };
 		5E7999412545272000530CAE /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7999402545272000530CAE /* Categoria.swift */; };
+		5EA9120D2545BCF200AB366D /* ARModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA9120C2545BCF200AB366D /* ARModalView.swift */; };
+		5EA912152545BCFE00AB366D /* ARModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA912142545BCFE00AB366D /* ARModalView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,8 @@
 		5E79992F25451A1300530CAE /* Instituicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instituicao.swift; sourceTree = "<group>"; };
 		5E79993425451AD100530CAE /* Exposicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exposicao.swift; sourceTree = "<group>"; };
 		5E7999402545272000530CAE /* Categoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
+		5EA9120C2545BCF200AB366D /* ARModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModalView.swift; sourceTree = "<group>"; };
+		5EA912142545BCFE00AB366D /* ARModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARModalView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +191,7 @@
 		5E7998892544B90000530CAE /* AR */ = {
 			isa = PBXGroup;
 			children = (
+				5EA9120B2545BBED00AB366D /* View */,
 				5E7998682544729200530CAE /* ARPreviewViewController.swift */,
 				5E7998952544B95600530CAE /* ARViewController.swift */,
 				5E7998962544B95600530CAE /* ARViewController.xib */,
@@ -254,6 +259,15 @@
 				5E7998892544B90000530CAE /* AR */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		5EA9120B2545BBED00AB366D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5EA9120C2545BCF200AB366D /* ARModalView.swift */,
+				5EA912142545BCFE00AB366D /* ARModalView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +380,7 @@
 				5E7998E025450C7600530CAE /* 137214.usdz in Resources */,
 				5E7998E125450C7600530CAE /* 137253.usdz in Resources */,
 				5E79983125445E0100530CAE /* Main.storyboard in Resources */,
+				5EA912152545BCFE00AB366D /* ARModalView.xib in Resources */,
 				5E7998E325450C7600530CAE /* 137140.usdz in Resources */,
 				5E7998CD2544EB5200530CAE /* 136997.usdz in Resources */,
 				5E7998E225450C7600530CAE /* 137272.usdz in Resources */,
@@ -405,6 +420,7 @@
 				5E79982A25445E0100530CAE /* AppDelegate.swift in Sources */,
 				5E799920254518FA00530CAE /* Fotografia.swift in Sources */,
 				5E79993525451AD100530CAE /* Exposicao.swift in Sources */,
+				5EA9120D2545BCF200AB366D /* ARModalView.swift in Sources */,
 				5E79982C25445E0100530CAE /* SceneDelegate.swift in Sources */,
 				5E7998972544B95600530CAE /* ARViewController.swift in Sources */,
 			);
