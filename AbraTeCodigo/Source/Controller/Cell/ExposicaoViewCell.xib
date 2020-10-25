@@ -29,6 +29,9 @@
                 <constraint firstItem="xqW-OA-FHm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yuR-Xd-73D"/>
             </constraints>
             <size key="customSize" width="437" height="189"/>
+            <connections>
+                <outlet property="coverImageView" destination="xqW-OA-FHm" id="xdA-ri-cMj"/>
+            </connections>
             <point key="canvasLocation" x="421.01449275362324" y="156.36160714285714"/>
         </collectionViewCell>
     </objects>

@@ -9,5 +9,7 @@ import Foundation
 
 struct Exposicao {
     let titulo: String
+    let descricao: String
+    let imagem: String
     let itens: [ItemDigital]
 }

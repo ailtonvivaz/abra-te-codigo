@@ -8,10 +8,10 @@
 import UIKit
 
 class ExposicaoViewCell: UICollectionViewCell {
+    @IBOutlet weak var coverImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
 }

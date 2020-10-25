@@ -20,15 +20,15 @@
                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8Kt-YQ-O5y">
                         <rect key="frame" x="80" y="12" width="271" height="213"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Rf-1L-8l7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Rf-1L-8l7">
                                 <rect key="frame" x="54" y="0.0" width="163" height="162.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="2Rf-1L-8l7" secondAttribute="height" id="yFF-XX-JAd"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GR9-WQ-LiS">
-                                <rect key="frame" x="116.5" y="170.5" width="38.5" height="42.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="GR9-WQ-LiS">
+                                <rect key="frame" x="117.5" y="170.5" width="36" height="42.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <color key="textColor" name="darkestText"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -46,6 +46,10 @@
                 <constraint firstItem="2Rf-1L-8l7" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.6" id="lb1-Pn-T7T"/>
             </constraints>
             <size key="customSize" width="271" height="257"/>
+            <connections>
+                <outlet property="logoImageView" destination="2Rf-1L-8l7" id="2eT-vZ-PqM"/>
+                <outlet property="titleLabel" destination="GR9-WQ-LiS" id="baQ-VH-3VV"/>
+            </connections>
             <point key="canvasLocation" x="300.72463768115944" y="179.12946428571428"/>
         </collectionViewCell>
     </objects>

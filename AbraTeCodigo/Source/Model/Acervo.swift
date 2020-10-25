@@ -10,12 +10,12 @@ import Foundation
 class Acervo {
     static let shared = Acervo()
     
-    let mhn = Instituicao(nome: "Museu Histórico Nacional", logo: "", fotoCapa: "", categoria: .museu)
-    let eav = Instituicao(nome: "EAV Parque Lage", logo: "", fotoCapa: "", categoria: .museu)
-    let casaPovo = Instituicao(nome: "Casa do Povo", logo: "", fotoCapa: "", categoria: .museu)
-    let bienal = Instituicao(nome: "Bienal São Paulo", logo: "", fotoCapa: "", categoria: .museu)
-    let macUSP = Instituicao(nome: "MAC-USP", logo: "", fotoCapa: "", categoria: .museu)
-    let museuFutebol = Instituicao(nome: "Museu do Futebol", logo: "", fotoCapa: "", categoria: .museu)
+    let mhn = Instituicao(nome: "Museu Histórico Nacional", logo: "mhn", fotoCapa: "mhnCapa", categoria: .museu, resumo: "Museu Histórico Nacional, criado em 1922, é um dos mais importantes museus do Brasil, reunindo um acervo de mais de 250.000 itens.")
+    let eav = Instituicao(nome: "EAV Parque Lage", logo: "eav", fotoCapa: "", categoria: .museu)
+    let casaPovo = Instituicao(nome: "Casa do Povo", logo: "casaPovo", fotoCapa: "", categoria: .museu)
+    let bienal = Instituicao(nome: "Bienal São Paulo", logo: "bienal", fotoCapa: "", categoria: .museu)
+    let macUSP = Instituicao(nome: "MAC-USP", logo: "macUSP", fotoCapa: "", categoria: .museu)
+    let museuFutebol = Instituicao(nome: "Museu do Futebol", logo: "museuFutebol", fotoCapa: "", categoria: .museu)
     
     lazy var instituicoes: [Instituicao] = [mhn, eav, casaPovo, bienal, macUSP, museuFutebol]
     
@@ -29,16 +29,17 @@ class Acervo {
         Moeda(fileName: "137272", nome: "Moeda de 6.400 réis", descricao: "Anverso: Ao centro, busto de D. Pedro II ainda menino, voltado para a direita. Legenda: ao redor, PETRUS . II . D . G . CONST . IMP . ET . PERP . BRAS . DEF e 1832 . R entre florões. Reverso: Ao centro, brasão do Império sobre o valor 6400 entre florões. Legenda: ao redor, IN * HOC * SIGNO * VINCES", local: "Rio de Janeiro", data: "1832", tecnica: "Cunhagem", material: "Ouro", governante: "D. Pedro II (1831-1889)", diametro: 32, licenca: .cc, instituicao: mhn),
         
         // MARK: - Quadros
-        Quadro(fileName: "6368", denominacao: .pinturaDocumental, nome: "Convento de Santa Teresa", descricao: "Exterior de arquitetura religiosa. Do lado esquerdo, uma escadaria que leva à igreja. Esta é branca, com cunhais de pedra, frontão retilíneo encimado por uma cruz. Corpo formado por uma janela longa e retangular, ladeada por outras duas janelas menores. Torre lateral única. Parte da entrada colocada na lateral. Do lado esquerdo, ao fundo, vegetação formando jardim. Assinatura do autor e datação no canto inferior esquerdo em tinta vermelha sobre incisão: Ruy Campello/946. Moldura em madeira estucada, dourada, abaulada no centro, com florões nos cantos.", local: "Rio de Janeiro", data: "1946", autor: "Rui Alves Campelo", tecnica: "Óleo sobre tela", tamanho: .init(largura: 66.5, altura: 77.3), licenca: .cc, instituicao: mhn)
+        Fotografia(fileName: "6368", denominacao: .pinturaDocumental, nome: "Convento de Santa Teresa", descricao: "Exterior de arquitetura religiosa. Do lado esquerdo, uma escadaria que leva à igreja. Esta é branca, com cunhais de pedra, frontão retilíneo encimado por uma cruz. Corpo formado por uma janela longa e retangular, ladeada por outras duas janelas menores. Torre lateral única. Parte da entrada colocada na lateral. Do lado esquerdo, ao fundo, vegetação formando jardim. Assinatura do autor e datação no canto inferior esquerdo em tinta vermelha sobre incisão: Ruy Campello/946. Moldura em madeira estucada, dourada, abaulada no centro, com florões nos cantos.", local: "Rio de Janeiro", data: "1946", autor: "Rui Alves Campelo", tecnica: "Óleo sobre tela", tamanho: .init(largura: 66.5, altura: 77.3), licenca: .cc, instituicao: mhn)
     ]
     
     lazy var exposicoes: [Exposicao] = [
-        Exposicao(titulo: "Moedas", itens: itens.filter { $0 is Moeda })
+        Exposicao(titulo: "Moedas", descricao: "Composta por 1215 itens, a coleção de moedas e barras de ouro do MHN abrange nove séculos de emissão monetária, com exemplares datados de 1185 até 2002. Produzidas em várias regiões de Portugal e no Brasil, ainda sob dominação portuguesa e já como país independente.", imagem: "expMoedas", itens: itens.filter { $0 is Moeda }),
+        Exposicao(titulo: "Louças", descricao: "", imagem: "expLouca", itens: [])
     ]
     
     let categorias: [Categoria] = [
-        Categoria(titulo: "Arte Indígena", subtitulo: "Arte dos Povos Indígenas", imagem: ""),
-        Categoria(titulo: "Período Colonial", subtitulo: "Objetos do Brasil Colonial", imagem: "")
+        Categoria(titulo: "Arte Indígena", subtitulo: "Arte dos Povos Indígenas", imagem: "arteIndigena"),
+        Categoria(titulo: "Período Colonial", subtitulo: "Objetos do Brasil Colonial", imagem: "periodoColonial")
     ]
     
     private init() {}
