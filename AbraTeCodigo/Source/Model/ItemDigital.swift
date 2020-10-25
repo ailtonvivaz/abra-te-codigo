@@ -40,7 +40,7 @@ class ItemDigital {
     
     var dados: [Dado] { [] }
     
-    internal init(fileName: String, denominacao: Denominacao, nome: String, descricao: String, local: String, data: String, licenca: Licenca, instituicao: Instituicao) {
+    internal init(fileName: String, denominacao: Denominacao, nome: String, descricao: String, local: String, data: String, licenca: Licenca, instituicao: Instituicao, imagem: String? = nil) {
         self.fileName = fileName
         self.denominacao = denominacao
         self.nome = nome

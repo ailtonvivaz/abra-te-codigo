@@ -24,7 +24,7 @@ class Moeda: ItemDigital {
         ]
     }
     
-    internal init(fileName: String, nome: String, descricao: String, local: String, data: String, tecnica: String, material: String, governante: String, diametro: Float, licenca: Licenca, instituicao: Instituicao) {
+    internal init(fileName: String, nome: String, descricao: String, local: String, data: String, tecnica: String, material: String, governante: String, diametro: Float, licenca: Licenca, instituicao: Instituicao, imagem: String? = nil) {
         self.tecnica = tecnica
         self.material = material
         self.governante = governante
