@@ -18,7 +18,7 @@ class InstituicaoViewCell: UICollectionViewCell {
 
     func configure(instituicao: Instituicao) {
         logoImageView.image = UIImage(named: instituicao.logo)
-        titleLabel.text = instituicao.nome
+        titleLabel.attributedText = instituicao.nome.withVerified()
     }
 
 }

@@ -24,6 +24,8 @@ class InstituicaoViewController: UIViewController {
 
     var exposicoes: [Exposicao] = []
     var itens : [ItemDigital] = []
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +42,7 @@ class InstituicaoViewController: UIViewController {
 
     func configure() {
         coverImage.image = UIImage(named: instituicao.fotoCapa)
-        titleLabel.text = instituicao.nome
+        titleLabel.attributedText = instituicao.nome.withVerified()
         logoImageView.image = UIImage(named: instituicao.logo)
         descriptionLabel.text = instituicao.resumo
 

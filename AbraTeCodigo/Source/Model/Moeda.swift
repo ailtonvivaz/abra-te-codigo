@@ -15,7 +15,7 @@ class Moeda: ItemDigital {
     
     override var dados: [Dado] {
         [
-            Dado(titulo: "Denominação", valor: "Moeda"),
+            Dado(titulo: "Denominação", valor: denominacao.rawValue),
             Dado(titulo: "Técnina", valor: tecnica),
             Dado(titulo: "Data de Produção", valor: data),
             Dado(titulo: "Local de Produção", valor: local),

@@ -47,6 +47,8 @@ class HomeViewController: UIViewController {
 
     var instituicoes: [Instituicao] = []
     var categorias : [Categoria] = []
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
 
     fileprivate func setupCollection() {
         collectionView.register(UINib(nibName: "\(ExposicaoViewCell.self)", bundle: nil), forCellWithReuseIdentifier: "\(ExposicaoViewCell.self)")

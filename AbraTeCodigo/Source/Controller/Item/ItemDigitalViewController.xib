@@ -13,8 +13,10 @@
                 <outlet property="dadosView" destination="qQt-tT-9nu" id="JaQ-So-kln"/>
                 <outlet property="descricaoLabel" destination="c7o-Q6-Z3T" id="QcV-D8-C0l"/>
                 <outlet property="imageView" destination="R2h-NP-zu7" id="cEX-aJ-iiX"/>
-                <outlet property="instituicaoLabel" destination="PYn-e5-FDM" id="zMh-eb-PHC"/>
-                <outlet property="tituloLabel" destination="s7t-Vx-2Dy" id="lbL-T1-MNN"/>
+                <outlet property="instituicaoBottomLabel" destination="PYn-e5-FDM" id="Mg2-Jg-V4K"/>
+                <outlet property="instituicaoLabel" destination="dc3-c0-y8l" id="mej-nu-V5X"/>
+                <outlet property="tituloBottomLabel" destination="s7t-Vx-2Dy" id="lGD-j8-wUe"/>
+                <outlet property="tituloLabel" destination="v2Q-gG-afF" id="KDH-D3-ZD0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -87,10 +89,10 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpa-8e-hRC">
-                    <rect key="frame" x="40" y="368.5" width="334" height="228"/>
+                    <rect key="frame" x="40" y="368.5" width="334" height="194.5"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hrI-Ra-dzt">
-                            <rect key="frame" x="20" y="78.5" width="294" height="139.5"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hrI-Ra-dzt">
+                            <rect key="frame" x="20" y="78.5" width="294" height="106"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moeda de 4.000 réis" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unZ-Tf-bL8">
                                     <rect key="frame" x="63.5" y="0.0" width="167" height="20.5"/>
@@ -99,13 +101,13 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museu Histórico Nacional" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc3-c0-y8l">
-                                    <rect key="frame" x="72" y="40.5" width="150.5" height="14.5"/>
+                                    <rect key="frame" x="72" y="30.5" width="150.5" height="14.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                     <color key="textColor" systemColor="systemGrayColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Pt-qZ-mdH">
-                                    <rect key="frame" x="27" y="75" width="240" height="24"/>
+                                    <rect key="frame" x="27" y="55" width="240" height="24"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dd4-wN-b6e">
                                             <rect key="frame" x="56" y="0.0" width="128" height="24"/>
@@ -152,8 +154,8 @@
                                     </constraints>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7o-Q6-Z3T">
-                                    <rect key="frame" x="126.5" y="119" width="41.5" height="20.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <rect key="frame" x="129.5" y="89" width="35.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <color key="textColor" systemColor="systemGrayColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>

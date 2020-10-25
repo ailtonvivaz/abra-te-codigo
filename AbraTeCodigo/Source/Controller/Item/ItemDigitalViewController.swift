@@ -14,6 +14,8 @@ class ItemDigitalViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var tituloLabel: UILabel!
     @IBOutlet weak var instituicaoLabel: UILabel!
+    @IBOutlet weak var tituloBottomLabel: UILabel!
+    @IBOutlet weak var instituicaoBottomLabel: UILabel!
     @IBOutlet weak var descricaoLabel: UILabel!
     
     override func viewDidLoad() {
@@ -22,7 +24,9 @@ class ItemDigitalViewController: UIViewController {
         dadosView.setupSwiftUI(ItemDataView(item: item, colorScheme: .dark))
         
         tituloLabel.text = item.nome
-        instituicaoLabel.text = item.instituicao.nome
+        instituicaoLabel.attributedText = item.instituicao.nome.withVerified()
+        tituloBottomLabel.text = item.nome
+        instituicaoBottomLabel.attributedText = item.instituicao.nome.withVerified()
         descricaoLabel.text = item.descricao
     }
     

@@ -49,6 +49,6 @@ class Acervo {
     }
     
     func getExposicoesBy(instituicao: Instituicao) -> [Exposicao] {
-        exposicoes.filter { $0.itens.map { $0.instituicao }.contains(instituicao) }
+        exposicoes
     }
 }

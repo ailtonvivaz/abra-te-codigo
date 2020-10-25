@@ -34,7 +34,7 @@ class ARModalView: UIView {
     
     func configure(item: ItemDigital) {
         nomeLabel.text = item.nome
-        instituicaoLabel.text = item.instituicao.nome
+        instituicaoLabel.attributedText = item.instituicao.nome.withVerified()
         
         dadosView.setupSwiftUI(ItemDataView(item: item, colorScheme: .light))
         
