@@ -32,6 +32,7 @@
 		5E7999282545190E00530CAE /* Acervo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7999272545190E00530CAE /* Acervo.swift */; };
 		5E79993025451A1300530CAE /* Instituicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79992F25451A1300530CAE /* Instituicao.swift */; };
 		5E79993525451AD100530CAE /* Exposicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79993425451AD100530CAE /* Exposicao.swift */; };
+		5E7999412545272000530CAE /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7999402545272000530CAE /* Categoria.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		5E7999272545190E00530CAE /* Acervo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acervo.swift; sourceTree = "<group>"; };
 		5E79992F25451A1300530CAE /* Instituicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instituicao.swift; sourceTree = "<group>"; };
 		5E79993425451AD100530CAE /* Exposicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exposicao.swift; sourceTree = "<group>"; };
+		5E7999402545272000530CAE /* Categoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 				5E79991F254518FA00530CAE /* Quadro.swift */,
 				5E79992F25451A1300530CAE /* Instituicao.swift */,
 				5E79993425451AD100530CAE /* Exposicao.swift */,
+				5E7999402545272000530CAE /* Categoria.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				5E7998F72545153600530CAE /* ItemDigital.swift in Sources */,
 				5E79993025451A1300530CAE /* Instituicao.swift in Sources */,
 				5E7998692544729200530CAE /* ARPreviewViewController.swift in Sources */,
+				5E7999412545272000530CAE /* Categoria.swift in Sources */,
 				5E79982E25445E0100530CAE /* ViewController.swift in Sources */,
 				5E7998FF2545155400530CAE /* Moeda.swift in Sources */,
 				5E7999282545190E00530CAE /* Acervo.swift in Sources */,

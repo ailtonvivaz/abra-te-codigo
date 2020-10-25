@@ -7,13 +7,15 @@
 
 import Foundation
 
-struct Instituicao {
+struct Instituicao: Equatable {
     enum Categoria { case museu }
     
-    let name: String
-    let icone: String
+    let nome: String
+    let logo: String
     let fotoCapa: String
     let categoria: Categoria
-    let itens: [ItemDigital]
-    let exposicoes: [Exposicao]
+    
+    static func == (lhs: Instituicao, rhs: Instituicao) -> Bool {
+        lhs.nome == rhs.nome
+    }
 }

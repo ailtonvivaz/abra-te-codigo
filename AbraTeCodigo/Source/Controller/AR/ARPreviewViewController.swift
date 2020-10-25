@@ -25,6 +25,8 @@ class ARPreviewViewController: QLPreviewController {
     
     var index = 0
     
+    var itemDigital: ItemDigital!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
