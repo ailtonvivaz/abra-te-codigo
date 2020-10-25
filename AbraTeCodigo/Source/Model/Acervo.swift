@@ -10,12 +10,12 @@ import Foundation
 class Acervo {
     static let shared = Acervo()
     
-    let mhn = Instituicao(nome: "Museu Histórico Nacional", logo: "", fotoCapa: "", categoria: .museu)
-    let eav = Instituicao(nome: "EAV Parque Lage", logo: "", fotoCapa: "", categoria: .museu)
-    let casaPovo = Instituicao(nome: "Casa do Povo", logo: "", fotoCapa: "", categoria: .museu)
-    let bienal = Instituicao(nome: "Bienal São Paulo", logo: "", fotoCapa: "", categoria: .museu)
-    let macUSP = Instituicao(nome: "MAC-USP", logo: "", fotoCapa: "", categoria: .museu)
-    let museuFutebol = Instituicao(nome: "Museu do Futebol", logo: "", fotoCapa: "", categoria: .museu)
+    let mhn = Instituicao(nome: "Museu Histórico Nacional", logo: "mnh", fotoCapa: "mnhCapa", categoria: .museu)
+    let eav = Instituicao(nome: "EAV Parque Lage", logo: "eav", fotoCapa: "", categoria: .museu)
+    let casaPovo = Instituicao(nome: "Casa do Povo", logo: "casaPovo", fotoCapa: "", categoria: .museu)
+    let bienal = Instituicao(nome: "Bienal São Paulo", logo: "bienal", fotoCapa: "", categoria: .museu)
+    let macUSP = Instituicao(nome: "MAC-USP", logo: "", fotoCapa: "macUSP", categoria: .museu)
+    let museuFutebol = Instituicao(nome: "Museu do Futebol", logo: "museuFutebol", fotoCapa: "", categoria: .museu)
     
     lazy var instituicoes: [Instituicao] = [mhn, eav, casaPovo, bienal, macUSP, museuFutebol]
     
@@ -33,12 +33,13 @@ class Acervo {
     ]
     
     lazy var exposicoes: [Exposicao] = [
-        Exposicao(titulo: "Moedas", descricao: "", imagem: "", itens: itens.filter { $0 is Moeda })
+        Exposicao(titulo: "Moedas", descricao: "Composta por 1215 itens, a coleção de moedas e barras de ouro do MHN abrange nove séculos de emissão monetária, com exemplares datados de 1185 até 2002. Produzidas em várias regiões de Portugal e no Brasil, ainda sob dominação portuguesa e já como país independente.", imagem: "expMoedas", itens: itens.filter { $0 is Moeda }),
+        Exposicao(titulo: "Louças", descricao: "", imagem: "expLouca", itens: [])
     ]
     
     let categorias: [Categoria] = [
-        Categoria(titulo: "Arte Indígena", subtitulo: "Arte dos Povos Indígenas", imagem: ""),
-        Categoria(titulo: "Período Colonial", subtitulo: "Objetos do Brasil Colonial", imagem: "")
+        Categoria(titulo: "Arte Indígena", subtitulo: "Arte dos Povos Indígenas", imagem: "arteIndigena"),
+        Categoria(titulo: "Período Colonial", subtitulo: "Objetos do Brasil Colonial", imagem: "periodoColonial")
     ]
     
     private init() {}
