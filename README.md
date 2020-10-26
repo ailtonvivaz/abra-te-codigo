@@ -23,7 +23,7 @@ A Museália é uma plataforma que permite catalogar e experimentar com objetos t
 
 | Página do Item | Item em Realidade Aumentada |
 |---|---|
-| ![Página do Item](Capturas/item.PNG)  | ![Item em Realidade Aumentada](Capturas/item_ra.PNG) |
+| ![Página do Item](Capturas/item.PNG)  | ![Item em Realidade Aumentada](Capturas/item_ar.PNG) |
 
 | Item em 3D | Item em 3D detalhado |
 |---|---|
